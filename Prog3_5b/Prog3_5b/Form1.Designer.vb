@@ -22,42 +22,53 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.lblProperty = New System.Windows.Forms.Label()
+        Me.btnAssoc = New System.Windows.Forms.Button()
+        Me.btnComm = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Label1
+        'lblProperty
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(122, 114)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Label1"
+        Me.lblProperty.Location = New System.Drawing.Point(0, 96)
+        Me.lblProperty.Name = "lblProperty"
+        Me.lblProperty.Size = New System.Drawing.Size(284, 23)
+        Me.lblProperty.TabIndex = 0
+        Me.lblProperty.Text = "(a + b) + c = a + (b + c)"
+        Me.lblProperty.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Button1
+        'btnAssoc
         '
-        Me.Button1.Location = New System.Drawing.Point(44, 154)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnAssoc.Location = New System.Drawing.Point(50, 151)
+        Me.btnAssoc.Name = "btnAssoc"
+        Me.btnAssoc.Size = New System.Drawing.Size(75, 23)
+        Me.btnAssoc.TabIndex = 1
+        Me.btnAssoc.Text = "Associative"
+        Me.btnAssoc.UseVisualStyleBackColor = True
+        '
+        'btnComm
+        '
+        Me.btnComm.Location = New System.Drawing.Point(153, 151)
+        Me.btnComm.Name = "btnComm"
+        Me.btnComm.Size = New System.Drawing.Size(80, 23)
+        Me.btnComm.TabIndex = 2
+        Me.btnComm.Text = "Commutative"
+        Me.btnComm.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.btnComm)
+        Me.Controls.Add(Me.btnAssoc)
+        Me.Controls.Add(Me.lblProperty)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents lblProperty As Label
+    Friend WithEvents btnAssoc As Button
+    Friend WithEvents btnComm As Button
 End Class
