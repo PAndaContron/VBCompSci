@@ -32,6 +32,7 @@ Partial Class Form1
         Me.lstList.Size = New System.Drawing.Size(260, 237)
         Me.lstList.TabIndex = 0
         Me.lstList.UseCompatibleStateImageBehavior = False
+        Me.lstList.View = System.Windows.Forms.View.List
         '
         'Form1
         '
