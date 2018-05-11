@@ -25,6 +25,7 @@ Sam Eigen – guitar, backing vocals"
         Me.lblInfo.Text = "Mick Jagger – vocals, harmonica, rhythm guitar, percussion, keyboards
 Keith Richards – rhythm and lead guitar, bass guitar, vocals
 Michael Klooster – keyboards, programming, backing vocals
-Randy Cooke – drums, percussion"
+Randy Cooke – drums, percussion
+Mr. Dr. Professor Gill - trumpet"
     End Sub
 End Class
