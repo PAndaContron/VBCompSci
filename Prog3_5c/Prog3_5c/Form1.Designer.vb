@@ -28,6 +28,8 @@ Partial Class Form1
         Me.mnuAssoc = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuComm = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuExit = New System.Windows.Forms.ToolStripMenuItem()
+        Me.btnAssoc = New System.Windows.Forms.Button()
+        Me.btnComm = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -59,26 +61,46 @@ Partial Class Form1
         'mnuAssoc
         '
         Me.mnuAssoc.Name = "mnuAssoc"
-        Me.mnuAssoc.Size = New System.Drawing.Size(152, 22)
+        Me.mnuAssoc.Size = New System.Drawing.Size(147, 22)
         Me.mnuAssoc.Text = "Associative"
         '
         'mnuComm
         '
         Me.mnuComm.Name = "mnuComm"
-        Me.mnuComm.Size = New System.Drawing.Size(152, 22)
+        Me.mnuComm.Size = New System.Drawing.Size(147, 22)
         Me.mnuComm.Text = "Commutative"
         '
         'mnuExit
         '
         Me.mnuExit.Name = "mnuExit"
-        Me.mnuExit.Size = New System.Drawing.Size(152, 22)
+        Me.mnuExit.Size = New System.Drawing.Size(147, 22)
         Me.mnuExit.Text = "Exit"
+        '
+        'btnAssoc
+        '
+        Me.btnAssoc.Location = New System.Drawing.Point(37, 195)
+        Me.btnAssoc.Name = "btnAssoc"
+        Me.btnAssoc.Size = New System.Drawing.Size(82, 23)
+        Me.btnAssoc.TabIndex = 2
+        Me.btnAssoc.Text = "Associative"
+        Me.btnAssoc.UseVisualStyleBackColor = True
+        '
+        'btnComm
+        '
+        Me.btnComm.Location = New System.Drawing.Point(161, 195)
+        Me.btnComm.Name = "btnComm"
+        Me.btnComm.Size = New System.Drawing.Size(81, 23)
+        Me.btnComm.TabIndex = 3
+        Me.btnComm.Text = "Commutative"
+        Me.btnComm.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.Controls.Add(Me.btnComm)
+        Me.Controls.Add(Me.btnAssoc)
         Me.Controls.Add(Me.lblProperty)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
@@ -97,4 +119,6 @@ Partial Class Form1
     Friend WithEvents mnuAssoc As ToolStripMenuItem
     Friend WithEvents mnuComm As ToolStripMenuItem
     Friend WithEvents mnuExit As ToolStripMenuItem
+    Friend WithEvents btnAssoc As Button
+    Friend WithEvents btnComm As Button
 End Class

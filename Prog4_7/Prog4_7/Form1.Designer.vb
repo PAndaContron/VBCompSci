@@ -27,8 +27,8 @@ Partial Class Form1
         Me.lblDime = New System.Windows.Forms.Label()
         Me.lblChange = New System.Windows.Forms.Label()
         Me.lblQuarter = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.txtChange = New System.Windows.Forms.TextBox()
+        Me.btnCoins = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblPennies
@@ -76,29 +76,29 @@ Partial Class Form1
         Me.lblQuarter.TabIndex = 4
         Me.lblQuarter.Text = "Quarters:"
         '
-        'TextBox1
+        'txtChange
         '
-        Me.TextBox1.Location = New System.Drawing.Point(158, 21)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 5
+        Me.txtChange.Location = New System.Drawing.Point(158, 21)
+        Me.txtChange.Name = "txtChange"
+        Me.txtChange.Size = New System.Drawing.Size(100, 20)
+        Me.txtChange.TabIndex = 5
         '
-        'Button1
+        'btnCoins
         '
-        Me.Button1.Location = New System.Drawing.Point(183, 157)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 6
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnCoins.Location = New System.Drawing.Point(183, 157)
+        Me.btnCoins.Name = "btnCoins"
+        Me.btnCoins.Size = New System.Drawing.Size(75, 23)
+        Me.btnCoins.TabIndex = 6
+        Me.btnCoins.Text = "Coins"
+        Me.btnCoins.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 201)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.btnCoins)
+        Me.Controls.Add(Me.txtChange)
         Me.Controls.Add(Me.lblQuarter)
         Me.Controls.Add(Me.lblChange)
         Me.Controls.Add(Me.lblDime)
@@ -116,6 +116,6 @@ Partial Class Form1
     Friend WithEvents lblDime As Label
     Friend WithEvents lblChange As Label
     Friend WithEvents lblQuarter As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents txtChange As TextBox
+    Friend WithEvents btnCoins As Button
 End Class
