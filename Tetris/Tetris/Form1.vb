@@ -1,15 +1,25 @@
 ﻿Public Class Form1
     Dim boxes(10, 18) As PictureBox
 
-    Private Sub Form1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Me.KeyPress
-        Select Case e.KeyChar
-            Case "s"
+    Const NONE As Integer = 0
+    Const I As Integer = 1
+    Const T As Integer = 2
+    Const O As Integer = 3
+    Const L As Integer = 4
+    Const J As Integer = 5
+    Const S As Integer = 6
+    Const Z As Integer = 7
+    Dim intCurrentBox As Integer = NONE
+
+    Private Sub Form1_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+        Select Case e.KeyCode
+            Case Keys.Down
                 Debug.Print("Straight down")
-            Case "a"
+            Case Keys.Left
                 Debug.Print("Am going left")
-            Case "d"
+            Case Keys.Right
                 Debug.Print("Droite")
-            Case " "
+            Case Keys.Space
                 Debug.Print("Spin me round and round")
         End Select
     End Sub
@@ -25,5 +35,27 @@
                 Me.Controls.Add(boxes(intX, intY))
             Next
         Next
+        tmrMain.Start()
+    End Sub
+
+    Private Sub tmrMain_Tick(sender As Object, e As EventArgs) Handles tmrMain.Tick
+        Select Case intCurrentBox
+            Case NONE
+                Debug.Print("Tick")
+            Case I
+
+            Case T
+
+            Case O
+
+            Case L
+
+            Case J
+
+            Case S
+
+            Case Z
+
+        End Select
     End Sub
 End Class

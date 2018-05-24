@@ -28,6 +28,8 @@ Partial Class Form1
         Me.mnuBye = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuExit = New System.Windows.Forms.ToolStripMenuItem()
         Me.lblHello = New System.Windows.Forms.Label()
+        Me.btnHello = New System.Windows.Forms.Button()
+        Me.btnGoodbye = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -75,11 +77,31 @@ Partial Class Form1
         Me.lblHello.Text = "Hello!"
         Me.lblHello.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'btnHello
+        '
+        Me.btnHello.Location = New System.Drawing.Point(39, 211)
+        Me.btnHello.Name = "btnHello"
+        Me.btnHello.Size = New System.Drawing.Size(75, 23)
+        Me.btnHello.TabIndex = 2
+        Me.btnHello.Text = "Hello"
+        Me.btnHello.UseVisualStyleBackColor = True
+        '
+        'btnGoodbye
+        '
+        Me.btnGoodbye.Location = New System.Drawing.Point(183, 211)
+        Me.btnGoodbye.Name = "btnGoodbye"
+        Me.btnGoodbye.Size = New System.Drawing.Size(75, 23)
+        Me.btnGoodbye.TabIndex = 3
+        Me.btnGoodbye.Text = "Goodbye"
+        Me.btnGoodbye.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.Controls.Add(Me.btnGoodbye)
+        Me.Controls.Add(Me.btnHello)
         Me.Controls.Add(Me.lblHello)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
@@ -98,4 +120,6 @@ Partial Class Form1
     Friend WithEvents mnuBye As ToolStripMenuItem
     Friend WithEvents mnuExit As ToolStripMenuItem
     Friend WithEvents lblHello As Label
+    Friend WithEvents btnHello As Button
+    Friend WithEvents btnGoodbye As Button
 End Class

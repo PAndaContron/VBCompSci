@@ -10,4 +10,12 @@
     Private Sub mnuExit_Click(sender As Object, e As EventArgs) Handles mnuExit.Click
         End
     End Sub
+
+    Private Sub btnHello_Click(sender As Object, e As EventArgs) Handles btnHello.Click
+        lblHello.Text = "Hello!"
+    End Sub
+
+    Private Sub btnGoodbye_Click(sender As Object, e As EventArgs) Handles btnGoodbye.Click
+        lblHello.Text = "Good-bye!"
+    End Sub
 End Class
