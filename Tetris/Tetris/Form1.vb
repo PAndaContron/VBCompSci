@@ -67,8 +67,18 @@
     End Sub
 
     Private Function NewPiece() As Piece
+        Static blnAvailable As Boolean() = {True, True, True, True, True, True, True}
+        Static blnFALSE As Boolean() = {False, False, False, False, False, False, False}
         Dim rand As Random = New Random()
-        Select Case Math.Floor(rand.NextDouble * 7)
+        If Not blnAvailable(0) AndAlso Not blnAvailable(1) AndAlso Not blnAvailable(2) AndAlso Not blnAvailable(3) AndAlso Not blnAvailable(4) AndAlso Not blnAvailable(5) AndAlso Not blnAvailable(6) Then
+            blnAvailable = {True, True, True, True, True, True, True}
+        End If
+        Dim intState As Integer = Math.Floor(rand.NextDouble * 7)
+        Do While Not blnAvailable(intState)
+            intState = Math.Floor(rand.NextDouble * 7)
+        Loop
+        blnAvailable(intState) = False
+        Select Case intState
             Case I
                 Return New I(grdBoard)
             Case O

@@ -91,7 +91,7 @@ Public Class O
 
     Public Sub New(ByRef grd As Grid)
         MyBase.New(grd, New Point(4, 0), New Point(5, 0), New Point(4, 1), New Point(5, 1))
-        clrPieceColor = Color.Orange
+        clrPieceColor = Color.Yellow
         DrawTiles()
     End Sub
 
@@ -107,7 +107,7 @@ Public Class I
 
     Public Sub New(ByRef grd As Grid)
         MyBase.New(grd, New Point(3, 0), New Point(4, 0), New Point(5, 0), New Point(6, 0))
-        clrPieceColor = Color.Blue
+        clrPieceColor = Color.Cyan
         DrawTiles()
     End Sub
 
@@ -161,7 +161,7 @@ Public Class T
 
     Public Sub New(ByRef grd As Grid)
         MyBase.New(grd, New Point(5, 1), New Point(4, 0), New Point(5, 0), New Point(6, 0))
-        clrPieceColor = Color.Yellow
+        clrPieceColor = Color.Purple
         DrawTiles()
     End Sub
 
@@ -235,7 +235,7 @@ Public Class L
 
     Public Sub New(ByRef grd As Grid)
         MyBase.New(grd, New Point(4, 1), New Point(4, 0), New Point(5, 0), New Point(6, 0))
-        clrPieceColor = Color.Cyan
+        clrPieceColor = Color.Orange
         DrawTiles()
     End Sub
 
@@ -321,7 +321,7 @@ Public Class J
 
     Public Sub New(ByRef grd As Grid)
         MyBase.New(grd, New Point(4, 0), New Point(4, 1), New Point(5, 1), New Point(6, 1))
-        clrPieceColor = Color.Purple
+        clrPieceColor = Color.Blue
         DrawTiles()
     End Sub
 
