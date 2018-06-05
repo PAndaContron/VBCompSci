@@ -45,9 +45,8 @@ Partial Class Form1
         Me.lblAnswer.AutoSize = True
         Me.lblAnswer.Location = New System.Drawing.Point(12, 105)
         Me.lblAnswer.Name = "lblAnswer"
-        Me.lblAnswer.Size = New System.Drawing.Size(39, 13)
+        Me.lblAnswer.Size = New System.Drawing.Size(0, 13)
         Me.lblAnswer.TabIndex = 1
-        Me.lblAnswer.Text = "Label2"
         '
         'txtMinutes
         '
@@ -65,17 +64,17 @@ Partial Class Form1
         Me.grpConversions.Size = New System.Drawing.Size(257, 55)
         Me.grpConversions.TabIndex = 3
         Me.grpConversions.TabStop = False
-        Me.grpConversions.Text = "GroupBox1"
+        Me.grpConversions.Text = "Select time conversion"
         '
         'radTime
         '
         Me.radTime.AutoSize = True
         Me.radTime.Location = New System.Drawing.Point(141, 19)
         Me.radTime.Name = "radTime"
-        Me.radTime.Size = New System.Drawing.Size(90, 17)
+        Me.radTime.Size = New System.Drawing.Size(94, 17)
         Me.radTime.TabIndex = 1
         Me.radTime.TabStop = True
-        Me.radTime.Text = "RadioButton2"
+        Me.radTime.Text = "Minutes to h:m"
         Me.radTime.UseVisualStyleBackColor = True
         '
         'radSeconds
@@ -83,10 +82,10 @@ Partial Class Form1
         Me.radSeconds.AutoSize = True
         Me.radSeconds.Location = New System.Drawing.Point(21, 19)
         Me.radSeconds.Name = "radSeconds"
-        Me.radSeconds.Size = New System.Drawing.Size(90, 17)
+        Me.radSeconds.Size = New System.Drawing.Size(117, 17)
         Me.radSeconds.TabIndex = 0
         Me.radSeconds.TabStop = True
-        Me.radSeconds.Text = "RadioButton1"
+        Me.radSeconds.Text = "Minutes to seconds"
         Me.radSeconds.UseVisualStyleBackColor = True
         '
         'Form1
