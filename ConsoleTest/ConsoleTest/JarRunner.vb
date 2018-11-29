@@ -1,11 +1,13 @@
 ﻿Public Class JarRunner
     Private Shared processOutput As String
-    Public Shared Function RunJar(command As String, Optional arguments As String = "") As String
+    Public Shared Function RunJar(jarFile As String, Optional arguments As String = "") As String
+        processOutput = ""
+
         Dim p As Process = New Process()
         'javaw instead of java so that a console window does not pop up
         With p.StartInfo
             .FileName = "javaw.exe"
-            .Arguments = " -jar " + command + " " + arguments
+            .Arguments = " -jar " + jarFile + " " + arguments
             .RedirectStandardOutput = True
             .RedirectStandardError = True
             .RedirectStandardInput = True
